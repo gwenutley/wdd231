@@ -1,0 +1,68 @@
+{  
+    "businesses": [
+        {
+            "businessName": "Taco Town",
+            "address": "Juan Manuel Vallarta, 45120 Zapopan, Jalisco",
+            "phoneNumber": "33 2345 3900",
+            "website": "tacotown.com",
+            "imageUrl": "images/taco.png",
+            "membershipLevel": 1
+        },
+        {
+            "businessName": "Juan School District",
+            "address": "Paseo del Sol, 45545 Zapopan, Jalisco",
+            "phoneNumber": "33 0101 4839",
+            "website": "juanschool.com",
+            "imageUrl": "images/juan.png",
+            "membershipLevel": 3
+        },
+        {
+            "businessName": "Jose Hospital",
+            "address": "Juan Manuel Vallarta, 45120 Zapopan, Jalisco",
+            "phoneNumber": "33 3390 0922",
+            "website": "juanhospital.com",
+            "imageUrl": "images/jose.png",
+            "membershipLevel": 3
+        },
+        {
+            "businessName": "Comp Grocery",
+            "address": "Jardines de San Jose, 45782 Santa Anita, Jalisco",
+            "phoneNumber": "33 6357 3878",
+            "website": "compgrocery.com",
+            "imageUrl": "images/camp.png",
+            "membershipLevel": 1
+        },
+        {
+            "businessName": "Cortas de Carne",
+            "address": "calle Jose Sans, 45890 Zapopan, Jalisco",
+            "phoneNumber": "33 2093 4893",
+            "website": "carnecortas.com",
+            "imageUrl": "images/carne.png",
+            "membershipLevel": 2
+        },
+        {
+            "businessName": "Maria School",
+            "address": "San Marcos, 45330 Guadalajara, Jalisco",
+            "phoneNumber": "33 6380 3973",
+            "website": "mariaschool.com",
+            "imageUrl": "images/maria.png",
+            "membershipLevel": 2
+        },
+        {
+            "businessName": "Family Medical",
+            "address": "Bosques Boulevard, 45115 Guadalajara, Jalisco",
+            "phoneNumber": "33 3899 1209",
+            "website": "familymedical.com",
+            "imageUrl": "images/fam.png",
+            "membershipLevel": 2
+        },
+        {
+            "businessName": "Maria Tortas",
+            "address": "Jardines Alcalde, 45234 Guadalajara, Jalisco",
+            "phoneNumber": "33 4789 9999",
+            "website": "mariatortes.com",
+            "imageUrl": "images/torta.png",
+            "membershipLevel": 1
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+
+    "family name": "Martinez",
+    "moved in": "01/01/2025",
+    "number of people": 2,
+    "bishop visit?": false,
+    "family members":[
+        {
+            "name": "Gwen",
+            "gender": "female",
+            "birthday": "12/20/2015"
+        },
+        {
+            "name": "Fabian ",
+            "gender": "male",
+            "birthday": "02/12/2010"
+        }
+    ]
+
+}

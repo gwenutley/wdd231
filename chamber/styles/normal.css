@@ -1,0 +1,90 @@
+/*header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+    color:white;
+    padding: 10px 15px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#menu {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 40px;
+}
+
+.navlist {
+    background-color: transparent;
+    color: white;
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navlist.active {
+    display:block;
+}
+
+.navlist li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.navlist li a:hover {
+    background-color: #2b0000;
+
+}
+
+.navlist li a:active {
+    background-color: #550000;
+
+}
+
+/*footer section*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.media-links a {
+    color:white;
+}
+.media-links img {
+    width: 75px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 18px
+}
