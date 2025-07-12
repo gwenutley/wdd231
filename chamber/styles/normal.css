@@ -27,7 +27,7 @@ header h1 {
 }
 
 .navlist {
-    background-color: transparent;
+    background-color: black;
     color: white;
     list-style: none;
     display: none;

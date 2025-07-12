@@ -5,7 +5,7 @@
             "address": "Juan Manuel Vallarta, 45120 Zapopan, Jalisco",
             "phoneNumber": "33 2345 3900",
             "website": "tacotown.com",
-            "imageUrl": "images/taco.png",
+            "imageUrl": "images/taco.jpg",
             "membershipLevel": 1
         },
         {
@@ -13,7 +13,7 @@
             "address": "Paseo del Sol, 45545 Zapopan, Jalisco",
             "phoneNumber": "33 0101 4839",
             "website": "juanschool.com",
-            "imageUrl": "images/juan.png",
+            "imageUrl": "images/juan.jpg",
             "membershipLevel": 3
         },
         {
@@ -21,7 +21,7 @@
             "address": "Juan Manuel Vallarta, 45120 Zapopan, Jalisco",
             "phoneNumber": "33 3390 0922",
             "website": "juanhospital.com",
-            "imageUrl": "images/jose.png",
+            "imageUrl": "images/jose.jpg",
             "membershipLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "Jardines de San Jose, 45782 Santa Anita, Jalisco",
             "phoneNumber": "33 6357 3878",
             "website": "compgrocery.com",
-            "imageUrl": "images/camp.png",
+            "imageUrl": "images/camp.jpg",
             "membershipLevel": 1
         },
         {
@@ -37,7 +37,7 @@
             "address": "calle Jose Sans, 45890 Zapopan, Jalisco",
             "phoneNumber": "33 2093 4893",
             "website": "carnecortas.com",
-            "imageUrl": "images/carne.png",
+            "imageUrl": "images/carne.jpg",
             "membershipLevel": 2
         },
         {
@@ -45,7 +45,7 @@
             "address": "San Marcos, 45330 Guadalajara, Jalisco",
             "phoneNumber": "33 6380 3973",
             "website": "mariaschool.com",
-            "imageUrl": "images/maria.png",
+            "imageUrl": "images/maria.jpg",
             "membershipLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "address": "Bosques Boulevard, 45115 Guadalajara, Jalisco",
             "phoneNumber": "33 3899 1209",
             "website": "familymedical.com",
-            "imageUrl": "images/fam.png",
+            "imageUrl": "images/fam.jpg",
             "membershipLevel": 2
         },
         {
@@ -61,7 +61,7 @@
             "address": "Jardines Alcalde, 45234 Guadalajara, Jalisco",
             "phoneNumber": "33 4789 9999",
             "website": "mariatortes.com",
-            "imageUrl": "images/torta.png",
+            "imageUrl": "images/torta.jpg",
             "membershipLevel": 1
         }
     ]

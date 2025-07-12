@@ -31,6 +31,7 @@
     }
 
     .navlist {
+        background-color: transparent !important;
         display: flex !important;
         flex-direction: row;
         gap:2rem;
