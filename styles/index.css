@@ -82,8 +82,8 @@ h2{
     min-height: 250px;
     width: auto;
     margin:0 5px;
-    padding: 2rem;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: 18px;
 }
 
 /*second section*/
@@ -156,7 +156,7 @@ h2{
 }
 
 #incomplete{
-    background-color: #a8a8a8;
+    background-color: #56648f;
 }
 
 /*footer section*/

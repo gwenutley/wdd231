@@ -1,13 +1,19 @@
 //interactive hamburger menu for the navigation
-
-const navButton = document.querySelector('#nav');
-const navBar = document.querySelector('#nav-bar');
+/*
+const navButton = document.querySelector('#menu');
+const navBar = document.querySelector('#nav-list');
 
 navButton.addEventListener('click',() => {
-    navButton.classList.toggle('show');
     navBar.classList.toggle('show');
 
-})
+})*/
+
+//header
+document.getElementById('menu').addEventListener('click', function () {
+    document.querySelector('.navlist').classList.toggle('active');
+});
+
+
 
 // course array
 const courses = [
