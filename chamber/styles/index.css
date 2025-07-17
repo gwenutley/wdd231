@@ -1,0 +1,10 @@
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+}

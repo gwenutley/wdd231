@@ -1,15 +1,26 @@
 /*header*/
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color:black;
     color:white;
     padding: 10px 15px;
 }
 
-header img {
+.header {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
     width: 80px;
     height: auto;
 }
@@ -17,10 +28,21 @@ header img {
 header h1 {
     font-size: 25px;
     padding: 10px;
+    line-height: 1.2;
+}
+
+
+/*navigation*/
+nav {
+    width: 100%;
+    margin-top: 1rem;
+    flex-grow: 1;
+    order: 2;
 }
 
 #menu {
-    background-color: black;
+    display: flex;
+    background: none;
     color: white;
     border: none;
     font-size: 40px;
@@ -31,16 +53,18 @@ header h1 {
     color: white;
     list-style: none;
     display: none;
+    width:100%;
     margin: 0;
     padding: 0;
-
+    overflow:hidden;
 }
 
-.navlist.active {
+.navlist.open {
     display:block;
 }
 
 .navlist li a {
+    display:block;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -51,15 +75,13 @@ header h1 {
     border-top: 1px solid white;
 }
 
-.navlist li a:hover {
-    background-color: #2b0000;
-
-}
-
+.navlist li a:hover,
 .navlist li a:active {
     background-color: #550000;
 
 }
+
+
 
 /*footer section*/
 footer {

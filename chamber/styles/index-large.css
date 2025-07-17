@@ -1,0 +1,11 @@
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}

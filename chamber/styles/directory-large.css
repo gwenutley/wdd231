@@ -1,19 +1,25 @@
 @media (min-width: 1000px){
     /* header */
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 1rem;
+
+    .header {
+        display: grid;
+        grid-template-columns: 170px 1fr 1fr;
+        gap: 10px;
+    }
+
+    .logo img {
+        grid-column: 1 / 2;
+        width: 150px;
     }
 
     header h1 {
-        flex-grow: 1;
-        margin-left: 1rem;
+        grid-column: 2 / 3;
         font-size: 35px;
     }
 
-
+    header nav {
+        grid-column: 3 / 4;
+    }
 
     /*navigation bar*/
     #menu {

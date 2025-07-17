@@ -1,7 +1,12 @@
+
 //header
-document.getElementById('menu').addEventListener('click', function () {
-    document.querySelector('.navlist').classList.toggle('active');
-});
+
+const menuButton = document.querySelector('#menu');
+const navList = document.querySelector('.navlist');
+
+menuButton.addEventListener('click', () => {
+    navList.classList.toggle('open');
+})
 
 
 
