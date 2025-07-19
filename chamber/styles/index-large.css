@@ -1,3 +1,128 @@
+@media (min-width: 1000px){
+
+    /* header */
+
+    .header {
+        display: grid;
+        grid-template-columns: 170px 1fr 1fr;
+        gap: 10px;
+    }
+
+    .logo img {
+        grid-column: 1 / 2;
+        width: 150px;
+    }
+
+    header h1 {
+        grid-column: 2 / 3;
+        font-size: 35px;
+    }
+
+    header nav {
+        grid-column: 3 / 4;
+    }
+
+    /*navigation bar*/
+    #menu {
+        display: none;
+    }
+
+    nav.navigation {
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+        padding: 0;
+        margin-top: -100px;
+        height: 100px;
+        align-items: center;
+    }
+
+    .navlist {
+        background-color: transparent !important;
+        display: flex !important;
+        flex-direction: row;
+        gap:2rem;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navlist li {
+        border: none;
+    }
+
+    .navlist li a {
+        border: none;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+
+    /* weather sections */
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 2rem;
+        gap: 2rem;
+        
+    }
+
+    .events {
+        grid-column: 1 / 4;
+
+    }
+
+    .current-weather{
+        grid-column: 4 / 6;   
+    }
+
+    .forecast {
+        grid-column: 6 / 7;    
+    }
+
+
+    /*businesscard section*/
+    .cards {
+        display:flex;
+        gap:2rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    /*footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer1 {
+        grid-column: 1 / 2;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .media-links {
+        grid-column: 2 / 3;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .footer3 {
+        grid-column: 3 / 4;
+        align-items: center;
+        margin: 0 2px;   }
+}
+
+
+
+
+
+
+
+
+/*
+
 .hero {
     width: 100%;
     height: auto;
@@ -9,3 +134,4 @@
     justify-content: center;
     gap: 20px;
 }
+    */

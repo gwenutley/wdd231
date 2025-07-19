@@ -7,7 +7,7 @@ header{
 }
 
 .header {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
@@ -54,7 +54,7 @@ nav {
     list-style: none;
     display: none;
     width:100%;
-    margin: 0;
+    margin-right: 0;
     padding: 0;
     overflow:hidden;
 }
@@ -79,6 +79,9 @@ nav {
 .navlist li a:active {
     background-color: #550000;
 
+}
+.navlist a.active {
+    text-decoration:underline;
 }
 
 

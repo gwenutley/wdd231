@@ -16,9 +16,9 @@
     <link rel="icon" href="images/fav-coc.ico">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
             <button id="menu">≡</button>
             <nav>
                 <ul class="navlist">
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="">Join</a></li>
                     <li><a href="discover.html">Discover</a></li>
@@ -41,46 +41,50 @@
     </header>
     <main>
         <div class="hero">
-            <img src="" alt="guadalajara image">
+            <img src="images/guad.jpg" alt="guadalajara image">
         </div> 
-        <h2>Home</h2>
+        <h2 id="home">Home</h2>
+        <P class="joinToday">Guadalajara Chamber of Commerce <br><a href="directory.html">Become a member Today</a></P>
         <section class="weather">
             <aside class="events">
                 <h3>Events</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam cumque sit sint perferendis ea magnam.
-                </p>
+                <div>
+                    <h4><strong>Business Networking Event</strong><br></h4>
+                    <p><strong>Date:</strong> Aug 1, 2025<br></p>
+                    <p><strong>Time:</strong> 6:00 - 8:00pm<br></p>
+                    <p><strong>Location:</strong> City Center<br></p>
+                    <h4><strong>Virtual Workshop</strong><br></h4>
+                    <p><strong>Date:</strong> Aug 23 - Aug 30<br></p>
+                    <p><strong>Time:</strong> 7:00 - 9:00pm<br></p>
+                    <p><strong>Location:</strong> Online Link<br></p>
+                </div> 
             </aside>
             <aside class="current-weather">
                 <h3>Current Weather</h3>
-                <p>75F
-                    Partly cloudy
-                    high 80
-                    low 40
-                    humidity 20%
-                    sunrise 8am
-                    sunset 8pm
-                </p>
+                <div class="holder">
+                    <img id="weather-logo" src="#" alt="weather icon">
+                    <div>
+                        <p id="temp"></p>
+                        <p id="description"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div> 
             </aside>
-            <aside class="forecast">
+            <aside class=forecast>
                 <h3>Weather Forecast</h3>
-                <p>
-                    Today:90F
-                    Wednesday:89F
-                    Thursday: 78F
-                </p>
+                <div>
+                    <p id="today-temp"></p>
+                    <p id="tomorrow-temp"></p>
+                    <p id="nextday-temp"></p>
+                </div>
             </aside>
         </section>
         <section>
-            <aside class="business" id="b1">
-            
-            </aside>
-            <aside class="business" id="b2">
-            
-            </aside>
-            <aside class="business" id="b3">
-            
-            </aside>
+            <div class="cards"></div>
         </section>
     </main>
     <footer>
