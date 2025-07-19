@@ -1,18 +1,10 @@
 //interactive hamburger menu for the navigation
-/*
-const navButton = document.querySelector('#menu');
-const navBar = document.querySelector('#nav-list');
+const menuButton = document.querySelector('#menu');
+const navList = document.querySelector('.nav-list');
 
-navButton.addEventListener('click',() => {
-    navBar.classList.toggle('show');
-
-})*/
-
-//header
-document.getElementById('menu').addEventListener('click', function () {
-    document.querySelector('.navlist').classList.toggle('active');
-});
-
+menuButton.addEventListener('click', () => {
+    navList.classList.toggle('open');
+})
 
 
 // course array
@@ -121,6 +113,16 @@ function showCourses(array) {
     });
 }
 
+/*count number of courses*/
+const courseNum = document.querySelector("#course-number");
+
+function countCourses(subject) {
+    if (subject === "all") {
+        return courses.length;
+    }
+
+    return courses.filter(course => course.subject === subject).length;
+}
 
 
 function filterCourses(subject) {
@@ -132,6 +134,9 @@ function filterCourses(subject) {
         filtered = courses.filter(course => course.subject === subject);
     }
 
+    let count = countCourses(subject);
+    courseNum.innerHTML = `The total number of courses listed above is <b>${count}</b>`;
+
     showCourses(filtered);
 }
 
@@ -139,5 +144,4 @@ function filterCourses(subject) {
 const allCourses = document.querySelector("#all").addEventListener('click', () => filterCourses("all"));
 const cseCourses = document.querySelector("#cse").addEventListener('click', () => filterCourses("CSE"));
 const wddCourses = document.querySelector("#wdd").addEventListener('click', () => filterCourses("WDD"));
-
 

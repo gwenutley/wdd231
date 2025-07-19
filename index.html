@@ -18,18 +18,23 @@
 </head>
 <body>
     <header>
-        <img src="images/logo2.png" alt="logo">
-        <span>Gwen | WDD231</span>
-        <button id="menu">≡</button>
+        <div class="header">
+            <img src="images/logo2.png" alt="logo">
+            <span>Gwen | WDD231</span>
+            <button id="menu">≡</button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="chamber/index.html" class="nav-link">Chamber</a></li>
+                    <li><a href="#" class="nav-link">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
     </header>
     <main>
-        <nav  id="nav" class="navigation">
-            <ul class="nav-list">
-                <li><a href="index.html" id="home">Home</a></li>
-                <li><a href="#" id="chamber">Chamber</a></li>
-                <li><a href="#" id="final">Final</a></li>
-            </ul>
-        </nav>
         <h1>My Home Page</h1>
         <section class="first">
             <h2>About Me</h2>
@@ -55,6 +60,7 @@
             <button id="wdd" class="course">
                 WDD Courses
             </button>
+            <p id="course-number"></p>
             <section id="course-display" class="courses"></section>
         </section>
     </main>
