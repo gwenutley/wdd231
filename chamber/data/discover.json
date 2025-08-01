@@ -1,0 +1,60 @@
+{
+    "interests": [
+        {
+            "title": "Chapala Lake",
+            "image": "images/chapala.webp",
+            "address": "Chapala Centro, 45900 Chapala, Jalisco",
+            "description": "This volcanic crater lake is Mexico’s largest lake and is loved for its wealth of outdoor activities, especially its public thermal pools",
+            "button": "Learn More"
+        },
+        {
+            "title": "Catedral Basilica",
+            "image": "images/catedral.webp",
+            "address": "Av. Fray Antonio Alcalde 10, Zona Centro, 44100 Guadalajara, Jalisco",
+            "description": "The Catedral Basilica It is the seat of the Archdiocese of Guadalajara and one of the main temples of the Catholic Church in Mexico.",
+            "button": "Learn More"
+        },
+        {
+            "title": "Calle de Sombrillas",
+            "image": "images/sombrillas.webp",
+            "address": "Calle Independencia 295, Centro, 45500 San Pedro Tlaquepaque, Jalisco",
+            "description": "Independencia Street in Tlaquepaque is a place to visit both day and night. There's a wide variety of restaurants and bars, and you can admire the famous umbrellas.",
+            "button": "Learn More"
+        },
+        {
+            "title": "Cascada de Huentitlan",
+            "image": "images/cascada.webp",
+            "address": "Martires de la Democracia, Loma del Zalate (Ahuatan), 44390 Tonalá, Jalisco",
+            "description": "This is an unique experience to enjoy nature near Guadalajara. It is a special opportunity to swim into clean fresh water.",
+            "button": "Learn More"
+        },
+        {
+            "title": "Guachimontones",
+            "image": "images/pyramids.webp",
+            "address": "Piramide circular, Estanzuela, 46762 Guachimontones, Jalisco",
+            "description": "Los Guachimontones is part of the Agave Landscape and Ancient Industrial Facilities of Tequila",
+            "button": "Learn More"
+        },
+        {
+            "title": "Teatro Degollado",
+            "image": "images/theatre.webp",
+            "address": "C. Degollado s/n, Zona Centro, 44100 Guadalajara, Jalisco",
+            "description": "The Santos Degollado Theater is a mid-19th-century building located in the Mexican city of Guadalajara, there are many shows done here.",
+            "button": "Learn More"
+        },
+        {
+            "title": "Zoologico Guadalajara",
+            "image": "images/zoo.webp",
+            "address": "C. P. del Zoológico 600, Huentitán El Alto, 44390 Guadalajara, Jalisco",
+            "description": "It was inaugurated on March 10, 1988 by the President of the Mexican Republic, Miguel de la Madrid Hurtado, and opened its doors to the public on the 25th of the same month.",
+            "button": "Learn More"
+        },
+        {
+            "title": "Tequila",
+            "image": "images/tequila.webp",
+            "address": "El Rastro, 46400 Tequila, Jalisco",
+            "description": "Magic town where tequila production dates back to the pre-Hispanic era when indigenous peoples fermented the sap of the agave plant to create tequila",
+            "button": "Learn More"
+        }
+    ]
+}

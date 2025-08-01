@@ -1,7 +1,7 @@
 /*asynch function*/
 async function GetBusinesses() {
     try {
-        const response = await fetch('directory.json');
+        const response = await fetch('data/directory.json');
         const data = await response.json();
         console.log(data);
 

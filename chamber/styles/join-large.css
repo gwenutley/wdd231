@@ -1,4 +1,4 @@
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
 
     /* header */
 
@@ -41,7 +41,7 @@
         background-color: transparent !important;
         display: flex !important;
         flex-direction: row;
-        gap:2rem;
+        gap: 2rem;
         margin-right: 10px;
         padding: 10px;
         width: 100%;
@@ -59,36 +59,31 @@
         font-size: 25px;
     }
 
-    /* weather sections */
-    .weather {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: 0 2rem;
-        gap: 2rem;
-        
+
+
+    /* form section*/
+    main {
+        display: flex;
+        padding: 40px 80px;
+        justify-content: space-between;
+        gap: 20px;
     }
 
-    .events {
-        grid-column: 1 / 4;
-
+    form {
+        flex: 45%;
+        padding: 1rem;
     }
 
-    .current-weather{
-        grid-column: 4 / 6;   
-    }
-
-    .forecast {
-        grid-column: 6 / 7;    
+    section {
+        flex: 45%;
+        padding: 2rem;
     }
 
 
-    /*businesscard section*/
-    .cards {
-        display:flex;
-        gap:2rem;
-        margin: 0 auto;
-        justify-content: center;
-    }
+
+    /*membership types section*/
+
+
 
     /*footer section*/
     footer {
@@ -111,6 +106,6 @@
     .footer3 {
         grid-column: 3 / 4;
         align-items: center;
-        margin: 0 2px;   }
+        margin: 0 2px;
+    }
 }
-
