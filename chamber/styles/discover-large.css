@@ -1,5 +1,66 @@
 @media (min-width: 1025px){
 
+    /* header */
+
+    .header {
+        display: grid;
+        grid-template-columns: 170px 1fr 1fr;
+        gap: 10px;
+    }
+
+    .logo img {
+        grid-column: 1 / 2;
+        width: 150px;
+    }
+
+    header h1 {
+        grid-column: 2 / 3;
+        font-size: 35px;
+    }
+
+    header nav {
+        grid-column: 3 / 4;
+    }
+
+    /*navigation bar*/
+    #menu {
+        display: none;
+    }
+
+    nav.navigation {
+        display: flex;
+        justify-content: flex-end;
+        background-color: transparent;
+        padding: 0;
+        margin-top: -100px;
+        height: 100px;
+        align-items: center;
+    }
+
+    .navlist {
+        background-color: transparent !important;
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        margin-right: 10px;
+        padding: 10px;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navlist li {
+        border: none;
+    }
+
+    .navlist li a {
+        border: none;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+
+
+    /*cards section*/
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -12,7 +73,7 @@
         color: white;
         display: grid;
         grid-template-columns: 340px 1fr;
-        grid-template-rows: 1fr 110px 110px 1fr;
+        grid-template-rows: 1fr 160px 90px 1fr;
     }
 
     .card h2 {
@@ -39,13 +100,17 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         padding: 0 5px 10px 5px;
+        font-size: 14px;
+        margin: 0;
     }
 
     .card address {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
-        padding: 10px;
+        padding: 5px;
+        margin: 0;
         margin-top: 10px;
+        font-size: 14px;
     }
 
     .card button {
@@ -65,5 +130,40 @@
 
     figure:hover img {
         filter: grayscale(0%);
+    }
+
+
+    /*footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer1 {
+        grid-column: 1 / 2;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .media-links {
+        grid-column: 2 / 3;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .footer3 {
+        grid-column: 3 / 4;
+        align-items: center;
+        margin: 0 2px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .card p {
+        font-size: 16px;
+    }
+
+    .card address {
+        font-size: 16px;
     }
 }

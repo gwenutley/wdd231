@@ -31,10 +31,10 @@
             <button id="menu">≡</button>
             <nav>
                 <ul class="navlist">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="directory.html" class="nav-link">Directory</a></li>
+                    <li><a href="join.html" class="nav-link active">Join</a></li>
+                    <li><a href="discover.html" class="nav-link">Discover</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,6 +50,7 @@
 
             <label>Membership Level:
                 <select name="Membership" required>
+                    <option value="" disabled selected hidden>Select membership level</option>
                     <option value="Non-profit">Non-profit</option>
                     <option value="Bronze">Bronze</option>
                     <option value="Silver">Silver</option>
@@ -57,11 +58,11 @@
                 </select>
             </label>
 
-            <label for="business-description">Business Description: 
+            <label>Business Description: 
                 <textarea name="business-description" title="business-description" rows="5" cols="100"></textarea>
             </label>
 
-            <p id="timestamp" type="hidden" name="timestamp"></p>
+            <p id="timestamp"></p>
 
             <input type="submit" value="Join Now">
         </form>
@@ -71,45 +72,42 @@
                 <div>
                     <h3>Non Profit Membership Level</h3>
                     <button id="nonprofit">Learn More</button>
-
-                    <dialog id="nonprofit-info">
-                        <h2>Non Profit Information</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium.</p>
-                        <button id="closeNonprofit">Close</button>
-                    </dialog>
                 </div>
                 <div>
                     <h3>Bronze Membership Level</h3>
                     <button id="bronze">Learn More</button>
-                    
-                    <dialog id="bronze-info">
-                        <h2>Bronze Member Information</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium.</p>
-                        <button id="closeBronze">Close</button>
-                    </dialog>
                 </div>
                 <div>
                     <h3>Silver Membership Level</h3>
                     <button id="silver">Learn More</button>
-                    
-                    <dialog id="silver-info">
-                        <h2>Silver Member Information</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium.</p>
-                        <button id="closeSilver">Close</button>
-                    </dialog>
                 </div>
                 <div>
                     <h3>Gold Membership Level</h3>
                     <button id="gold">Learn More</button>
-                    
-                    <dialog id="gold-info">
-                        <h2>Gold Member Information</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, accusantium.</p>
-                        <button id="closeGold">Close</button>
-                    </dialog>
                 </div>
             </div>
+            
         </section>
+        <dialog class="modal" id="np-info">
+            <h2>Non Profit Member Information</h2>
+            <p>Non profit memberships are for nonprofit organizations.<br> No membership fees</p>
+            <button id="np-close-button">&times;</button>
+        </dialog>
+        <dialog class="modal" id="bronze-info">
+            <button id="bronze-close-button">&times;</button>
+            <h2>Bronze Member Information</h2>
+            <p>Bronze memberships is the most basic membership, only essentials included.<br> $5 monthly membership fee</p>
+        </dialog>
+        <dialog class="modal" id="silver-info">
+            <button id="silver-close-button">&times;</button>
+            <h2>Silver Member Information</h2>
+            <p>Silver memberships has essentials as well as some benefits.<br> $8 monthly membership fee</p>
+        </dialog>
+        <dialog class="modal" id="gold-info">
+            <button id="gold-close-button">&times;</button>
+            <h2>Gold Member Information</h2>
+            <p>Gold membership has all essentials as well as premium benefits included.<br> $12 monthly membership fee</p>
+        </dialog>
     </main>
     <footer>
         <p class="footer1">

@@ -40,16 +40,17 @@ function createInterestsCard(interests) {
         address.innerHTML = `<em>${interest.address}</em>`;
         address.classList.add("address");
 
-        const button = document.createElement("button");
-        button.innerHTML = `${interest.button}`;
-        button.classList.add("button");
+        const openButton = document.createElement("button");
+        openButton.textContent = interest.button;
+        openButton.classList.add("button");
+        
 
         figure.appendChild(img);
         card.appendChild(figure);
         card.appendChild(title);
         card.appendChild(address);
         card.appendChild(description);
-        card.appendChild(button);
+        card.appendChild(openButton);
 
         container.appendChild(card);
     }
@@ -58,25 +59,20 @@ function createInterestsCard(interests) {
 
 
 
-
-
-
-
-
 /*date*/
 
 const lastVisitSaved = "lastVisitTimeStamp";
 const now = Date.now();
 const lastVisit = localStorage.getItem(lastVisitSaved);
-
 const dateElement = document.getElementById("date");
 
 if (!lastVisit) {
     dateElement.textContent = "Welcome! Let us know if you have any questions.";
+
 } else {
     const timeSinceLastVisit = now - parseInt(lastVisit, 10);
-
     const hours = Math.floor(timeSinceLastVisit / 3600000);
+
     if (hours < 24) {
         dateElement.textContent = "Back so soon! Awesome!";
     }
@@ -89,4 +85,7 @@ if (!lastVisit) {
         }
     }
 }
+
+localStorage.setItem(lastVisitSaved, now.toString());
+
 
