@@ -1,0 +1,23 @@
+header {
+    background-color: #4a5e4a;
+    color: white;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    background-color: #4a5e4a;
+    color: white;
+}
+
+.plan {
+    width: 350px;
+    height: auto;
+}
