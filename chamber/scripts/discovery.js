@@ -43,14 +43,52 @@ function createInterestsCard(interests) {
         const openButton = document.createElement("button");
         openButton.textContent = interest.button;
         openButton.classList.add("button");
-        
+        openButton.id = `button-${interest.num}`;
 
+        /*add elements tothe dialog box*/
+        const dialog = document.createElement("dialog");
+        const moreInfoHead = document.createElement("h3");
+        moreInfoHead.textContent = `${interest.title}`;
+        
+        const moredesc = document.createElement("p");
+        moredesc.textContent = interest.description;
+        moredesc.classList.add("description");
+
+        const activities = document.createElement("p");
+        activities.textContent = interest.activities;
+        activities.classList.add("activities");
+
+        const cost = document.createElement("p");
+        cost.textContent = interest.cost;
+        cost.classList.add("cost");
+        
+        const closeButton = document.createElement("button");
+        closeButton.textContent = "Close"
+        closeButton.classList.add("close-button");
+        
+        /*append the dialog content*/
+        dialog.appendChild(moreInfoHead);
+        dialog.appendChild(moredesc);
+        dialog.appendChild(activities);
+        dialog.appendChild(cost);
+        dialog.appendChild(closeButton);
+
+        /* open andclose modal box*/
+        openButton.addEventListener("click", () => {
+            dialog.showModal();
+        });
+        closeButton.addEventListener("click", () => {
+            dialog.close();
+        });
+
+        /*append items to the card*/
         figure.appendChild(img);
         card.appendChild(figure);
         card.appendChild(title);
         card.appendChild(address);
         card.appendChild(description);
         card.appendChild(openButton);
+        card.appendChild(dialog);
 
         container.appendChild(card);
     }
@@ -87,5 +125,4 @@ if (!lastVisit) {
 }
 
 localStorage.setItem(lastVisitSaved, now.toString());
-
 

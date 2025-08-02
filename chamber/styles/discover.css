@@ -74,3 +74,34 @@ h1 {
     background-color: rgb(180, 146, 146);
     color: black;
 }
+
+/*dialog boxes*/
+dialog {
+    padding: 2rem;
+    max-width: 50rem;
+    min-height: 10rem;
+    border: 0;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+/*backdrop*/
+dialog::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+
+/*close button*/
+.close-button {
+    cursor: pointer;
+}
+
+/*open dialog box*/
+dialog[open] {
+    background-color: #b78080;
+    border-radius: 10px;
+}
