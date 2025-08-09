@@ -1,0 +1,97 @@
+/*hero image*/
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/*program card section*/
+
+.card {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #4a5e4a;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+    align-self: center;
+    font-size: 25px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 0;
+    margin: .5rem;
+    align-self:center;
+    border: 2px solid #4a5e4a;
+}
+
+.purpose {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+button {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 80%;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #4a5e4a;
+    color: black;
+    margin: 1rem;
+}
+
+
+/*design the dialog popup box*/
+dialog {
+    background-color: #4a5e4a;
+    color: white;
+    width: 80%;
+    height: 60%;
+    border-radius: 2rem;
+}
+
+dialog h4 {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+dialog p {
+    padding: .5rem;
+    text-align: center;
+    ;
+}
+
+.close {
+    width: 80%;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(234, 240, 196);
+    color: black;
+    margin: 1rem;
+}
+

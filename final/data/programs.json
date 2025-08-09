@@ -1,0 +1,108 @@
+{
+    "programs": [
+        {
+            "name": "Strength Training" ,
+            "purpose": " Prevent injury through foundational strength, power, mobility, and body control.",
+            "description": "Our talented bodybuilders train athletes to weightlift, and strengthen the muscle groups most essential to their specific sport. Strength training is also done for injury prevention",
+            "duration": 60,
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 30,
+            "monthCost": 200,
+            "image": "images/strength.jpg",
+            "button": "Learn More",
+            "ages": [13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 1
+        },
+        {
+            "name": "Endurance Training",
+            "purpose": "Become the athlete that can compete the longest",
+            "description": "Train to learn about breathing and cadence skills. Includes long runs, and interval trainings to become the most conditioned athlete around.",
+            "duration": "30-90",
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 30,
+            "monthCost": 200,
+            "image": "images/endurance.jpg",
+            "button": "Learn More",
+            "ages": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 2
+        },
+        {
+            "name": "Acceleration and Speed",
+            "purpose": "Critical in all sports, enhance sprinting speed, acceleration, lateral movement, and reaction time.",
+            "description": "Trainings to imporove speed through, cone drills, ladder drills, sprint mechanics, plyometrics, and footwork drills. These drills are done for each sport and can be catered to athletes upon request.",
+            "duration": 60,
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 30,
+            "monthCost": 200,
+            "image": "images/speed.jpg",
+            "button": "Learn More",
+            "ages": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 3
+        },
+        {
+            "name": "Mental Training",
+            "purpose": "Create mentally tough athletes, develop focus, confidence, and resilience under pressure.",
+            "description":"Courses to teach the psychology of sports, as well as help athletes learn to set goals, visualize, cope with high pressure situations, and become great leaders, and mentally strong",
+            "duration": 30,
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 20,
+            "monthCost": 120,
+            "image": "images/mind.jpg",
+            "button": "Learn More",
+            "ages": [13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 4
+        },
+        {
+            "name": "Sports Nutrition Education",
+            "purpose": "Teach proper nutrition, and how to fuel their bodies for energy, performance, and recovery.",
+            "description": "Our skilled team of registered dietitians teach the basics of nutrition specifically for athletes. This course includes the basics of macronutrients and hydration, as well as pre and post workout meals.",
+            "duration": 30,
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 20,
+            "monthCost": 120,
+            "image": "images/nutrition.jpg",
+            "button": "Learn More",
+            "ages": [18, 19, 20],
+            "num": 5
+        },
+        {
+            "name": "Skill Training",
+            "purpose": "Improve technical abilities tailored to each sport, mastering skills to perform at a higher level",
+            "description": "We have skilled trainers for all different sports. The skills training is catered to an athletes needs specific to their goals and the sports in which they play, and their desired skills.",
+            "duration": "30-90",
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 40,
+            "monthCost": 200,
+            "image": "images/skills.jpg",
+            "button": "Learn More",
+            "ages":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 6
+        },
+        {
+            "name": "Recovery Education",
+            "purpose": "Learn the importance of rest and recovery, and techniques to prevent overtraining and burnout.",
+            "description": "Includes education on the importance of rest and what that means. Includes trainings on mobility, stretching, ice therapy, and foam rolling.",
+            "duration": 30,
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 20,
+            "monthCost": 280,
+            "image": "images/recover.jpg",
+            "button": "Learn More",
+            "ages": [13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 7
+        },
+        {
+            "name": "Performance Testing and Tracking",
+            "purpose": "Create athletic goals, and measure improvements in speed, strength, agility, and endurance over time.",
+            "description": "Includes basic training activities, sprints, long-distance runs, strength tests, etc. Done to create measurable progress for young athletes to know what areas of imprvement are needed and create new progress goals.",
+            "duration": "15-45",
+            "costDescription": "Single training sessions fall under individual price, monthly sessions are 2 times a week.",
+            "oneCost": 15,
+            "monthCost": 95,
+            "image": "images/perform.jpg",
+            "button": "Learn More",
+            "ages": [13, 14, 15, 16, 17, 18, 19, 20],
+            "num": 8
+        }
+    ]
+}
