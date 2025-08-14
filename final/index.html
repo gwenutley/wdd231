@@ -14,8 +14,9 @@
     <meta property="og:locale" content="en-us">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="styles/index-med.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script type="module" src="scripts/main.js"></script>   
 </head>
 
 <body>
@@ -31,7 +32,6 @@
                     <li><a href="index.html" class="nav-link active">Home</a>
                     <li><a href="programs.html" class="nav-link">Programs</a>
                     <li><a href="register.html" class="nav-link">Register</a>
-                    <li><a href="" class="nav-link"></a>
                 </ul>
             </nav>
         </div>
@@ -39,8 +39,9 @@
     <main>
         <div class="hero">
             <img src="images/hero.jpg" alt="hero image of running">
+            <div id="slogan">Unlock your athletic potential now<br><a class="links" href="programs.html">View Programs</a> <a
+                    class="links" href="register.html">Register Today</a></div>
         </div>
-        <div id="slogan">Unlock your athletic potential now<br><a class="links" href="programs.html">View Programs</a> or <a class="links" href="register.html">Register Today</a></div>
         <section class="intro">
             <h2 id="home">All types of training for the best athletes</h2>
             <p>Utah Athlete Builders offers all types of training programs for young athletes. Our company has the top athletic trainers of all sports as well as specialized dieticans, psychologists, to help athletes reach their physical, mental, and emotional potentials.</p> 
@@ -50,9 +51,13 @@
                 <img src="images/sport3.jpg" alt="athlete image">
             </div>  
         </section>
-        <section>
+        <section id="program-cards">
             <h3>Training Programs</h3>
             <div class="programs"></div>
+        </section>
+        <section id="review-cards">
+            <h3>Reviews</h3>
+            <div class="reviews"></div>
         </section>
     </main>
     <footer>

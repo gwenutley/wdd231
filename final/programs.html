@@ -15,8 +15,9 @@
     <meta property="og:locale" content="en-us">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/programs.css">
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/programs.js" defer></script>
+    <link rel="stylesheet" href="styles/programs-med.css">
+    <link rel="stylesheet" href="styles/programs-large.css">
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -29,10 +30,9 @@
             <button id="menu">≡</button>
             <nav>
                 <ul class="navlist">
-                    <li><a href="index.html" class="nav-link active">Home</a>
-                    <li><a href="programs.html" class="nav-link">Programs</a>
+                    <li><a href="index.html" class="nav-link">Home</a>
+                    <li><a href="programs.html" class="nav-link active">Programs</a>
                     <li><a href="register.html" class="nav-link">Register</a>
-                    <li><a href="" class="nav-link"></a>
                 </ul>
             </nav>
         </div>
@@ -42,6 +42,14 @@
             <img src="images/hero.jpg" alt="hero image of running">
         </div>
         <h2>Programs</h2>
+        <p id="intro">Utah Athlete Builders offers a variety of programs for all sports and ages. Explore the programs below to find exactly what you or your child needs to reach their athletic potential.</p>
+        <h3>Ages</h3>
+        <div class="view">
+            <button class="age-buttons" id="age1">10-13</button>
+            <button class="age-buttons" id="age2">13-17</button>
+            <button class="age-buttons" id="age3">18-20</button>
+            <button class="age-buttons" id="all">All</button>
+        </div>
         <section id="programs">
 
         </section>

@@ -1,5 +1,5 @@
 /*asynch function for the programs section*/
-async function GetPrograms() {
+export async function GetPrograms() {
     try {
         const response = await fetch('data/programs.json');
         const data = await response.json();
@@ -19,8 +19,6 @@ async function GetPrograms() {
     }
 }
 
-GetPrograms();
-
 //create 3 random member cards 
 
 function createProgramsCard(programs) {
@@ -30,6 +28,7 @@ function createProgramsCard(programs) {
     programs.forEach(program => {
         const card = document.createElement("div");
         card.className = "card";
+        card.id = `card-${program.num}`;
 
         const name = document.createElement("h3");
         name.innerHTML = `${program.name}`;
@@ -65,3 +64,52 @@ function createProgramsCard(programs) {
     }
     )
 };
+
+/*async function to bring in reviews data*/
+export async function GetReviews() {
+    try {
+        const response2 = await fetch('data/reviews.json');
+        const data2 = await response2.json();
+        console.log(data2);
+
+        if (!data2.reviews || !Array.isArray(data2.reviews)) {
+            console.error("invalid JSON file");
+            return;
+        }
+
+        const mixData2 = data2.reviews.sort(() => 0.5 - Math.random());
+        const fiveReviews = mixData2.slice(0, 5);
+
+        createReviews(fiveReviews);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+function createReviews(reviews) {
+    const contain = document.querySelector(".reviews");
+    contain.innerHTML = "";
+
+    reviews.forEach(review => {
+        const box = document.createElement("div");
+        box.className = "box";
+
+        const name1 = document.createElement("h4");
+        name1.innerHTML = `${review.name}`;
+
+        const star = document.createElement("p");
+        star.innerHTML = `${review.stars}`;
+        star.classList.add("star");
+
+        const comment= document.createElement("p");
+        comment.innerHTML = `${review.comment}`;
+        comment.classList.add("comment");
+
+        box.appendChild(name1);
+        box.appendChild(star);
+        box.appendChild(comment);
+
+        contain.appendChild(box);
+
+    })
+}

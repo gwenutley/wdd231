@@ -1,13 +1,17 @@
+/*form section*/
 form {
     border: 2px solid #4a5e4a;
     margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 95%;
+    width: 80%;
     padding: 1rem;
     font-size: 14px;
 }
@@ -37,4 +41,53 @@ input[type=submit] {
     font-size: 16px;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input[type=submit]:hover {
+    background-color: rgb(178, 178, 129);
+}
+
+/*age section*/
+#ages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+#ages div {
+    width: 80%;
+    margin: 1rem 10% 15px 10%;
+    background-color: #4a5e4a;
+    border: 2px solid rgb(251, 251, 199);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#young,
+#middle,
+#old,
+#private {
+    background-color: rgb(251, 251, 199);
+    color: black;
+    padding: .2rem;
+    width: 40%;
+    margin: .5rem auto;
+    border-radius: 1rem;
+}
+
+#young:hover,
+#middle:hover,
+#old:hover,
+#private:hover {
+    background-color: rgb(178, 178, 129);
+    color: black;
+}
+
+h3 {
+    text-align: center;
 }

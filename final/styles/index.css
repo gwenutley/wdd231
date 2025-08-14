@@ -26,9 +26,27 @@
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: #4a5e4a;
     text-align: center;
+}
+
+/*slogan overlay section*/
+#slogan {
+    font-size: 20px;
+    display: block;
+    text-align: center
+}
+
+#slogan a {
+    text-decoration: none;
+    color: #4a5e4a;
+    background-color: rgb(234, 240, 196);
+}
+
+#slogan a:hover {
+    color:#222b22;
+    background-color: rgb(148, 155, 107);
 }
 
 /*program card section*/
@@ -83,9 +101,39 @@ h3 {
 }
 
 .card span {
-    align-items: center;
+    text-align: center;
 }
 .program-link {
-    color: #368536;
+    color: #4a5e4a;
+    background-color: rgb(234, 240, 196);
     align-self: center;
+}
+
+.program-link:hover {
+    color: #222b22;
+    background-color: rgb(148, 155, 107);
+}
+
+/*reviews section */
+.box {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(234, 240, 196);
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box h4 {
+    text-align: center;
+    color: #4a5e4a;
+    padding: .25rem;
+    margin: 0;
+}
+
+.box p {
+    padding: .5rem;
+    margin: 0;
 }

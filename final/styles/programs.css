@@ -8,6 +8,34 @@
     height: auto;
 }
 
+/*initial header and paragraph */
+h2 {
+    font-size: 35px;
+    color: #4a5e4a;
+    text-align: center;
+}
+
+#intro {
+    font-size: 18px;
+    padding: 0 1rem .8rem 1rem;
+    border-bottom: 2px solid rgb(234, 240, 196);
+}
+
+.view{
+    display:flex;
+    flex-direction:row;
+}
+
+.age-buttons {
+    background-color: rgb(234, 240, 196);
+    color: black;
+    font-size: 18px;
+    padding: .5rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 /*program card section*/
 
 .card {
@@ -53,6 +81,11 @@
     font-size: 18px;
 }
 
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
 button {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
@@ -60,7 +93,7 @@ button {
     height: 2rem;
     border-radius: 2rem;
     background-color: #4a5e4a;
-    color: black;
+    color: white;
     margin: 1rem;
 }
 
@@ -75,15 +108,15 @@ dialog {
 }
 
 dialog h4 {
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
-
+    border-bottom: 2px solid rgb(234, 240, 196);
 }
 
 dialog p {
     padding: .5rem;
     text-align: center;
-    ;
+    border: none;
 }
 
 .close {

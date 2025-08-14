@@ -1,0 +1,39 @@
+{
+    "reviews": [
+        {
+            "name": "Paige Baker",
+            "comment": "Utah Athlete Builders training sessions are what helped me reach my potential and play D1 basketball.",
+            "stars": "* * * * *"
+        },
+        {
+            "name": "Dawn Benion",
+            "comment": "I love Utah athlete builders I have 3 kids who have done the programs and progressed so much in their sports.",
+            "stars": "* * * * *"
+        },
+        {
+            "name": "Ammon Olson",
+            "comment": "I trained with Utah Athlete builder and develloped running habbits that have stayed with me for the past 15 years.",
+            "stars": "* * * * *"
+        },
+        {
+            "name": "Jill Davis",
+            "comment": "2 of my kids trained at a young age with Utah athlete Builders, one loved it, the other not as much.",
+            "stars": "* * * *"
+        },
+        {
+            "name": "Cody Smith",
+            "comment": "I loved the trainings here, and it has helped me make it on all the best soccer teams",
+            "stars": "* * * * *"
+        },
+        {
+            "name": "Kathy Martin",
+            "comment": "These training programs are amazing and have helped me greatly improve.",
+            "stars": "* * * *"
+        },
+        {
+            "name": "Alex Smith",
+            "comment": "I really enjoyed the trainings but fell and got injured by accident.",
+            "stars": "* *"
+        }
+    ]
+}

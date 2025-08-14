@@ -15,8 +15,8 @@
     <meta property="og:locale" content="en-us">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/register.css">
-    <script src="scripts/main.js" defer></script>
-
+    <link rel="stylesheet" href="styles/register-large.css">
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,6 @@
                     <li><a href="index.html" class="nav-link">Home</a>
                     <li><a href="programs.html" class="nav-link">Programs</a>
                     <li><a href="register.html" class="nav-link active">Register</a>
-                    <li><a href="" class="nav-link"></a>
                 </ul>
             </nav>
         </div>
@@ -48,14 +47,18 @@
             <label>Email: <input type="email" name="email" placeholder="john.smith@gmail.com" title="Your Email" autocomplete="email" required></label>
             <label>Phone: <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" required></label>
         
-            <label>Program:
-                <select name="Membership" required>
+            <label>Age Group:
+                <select name="age" id="agegroup" required>
                     <option value="" disabled selected hidden>Select desired program</option>
-                    <option value="Non-profit">Non-profit</option>
-                    <option value="Bronze">Bronze</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Gold">Gold</option>
+                    <option value="10-12">10-12 years</option>
+                    <option value="13-17">13-17 years</option>
+                    <option value="18-20">18-20 years</option>
+                    <option value="18-20">private</option>
                 </select>
+            </label>
+
+            <label>Programs:
+                <span id="container"></span>
             </label>
         
             <label>Questions:
@@ -67,6 +70,47 @@
             <input type="submit" value="Register Today">
             
         </form>
+        <section>
+            <h2>Age information</h2>
+            <div id="ages">
+                <div>
+                    <h3>10-12 Years</h3>
+                    <button id="young">Learn More</button>
+                </div>
+                <div>
+                    <h3>13-17 Years</h3>
+                    <button id="middle">Learn More</button>
+                </div>
+                <div>
+                    <h3>18-20 Years</h3>
+                    <button id="old">Learn More</button>
+                </div>
+                <div>
+                    <h3>Private Programs</h3>
+                    <button id="private">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <dialog class="modal" id="young-info">
+            <button id="young-button">&times;</button>
+            <h4>10-12 Years Information</h4>
+            <p>In the section 10-12 years, each child in the program will be within this age range in groups of 4-5.<br> No extra fees more than original cost</p>
+        </dialog>
+        <dialog class="modal" id="middle-info">
+            <button id="middle-button">&times;</button>
+            <h4>13-17 Years Information</h4>
+            <p>In the section 13-17 years, each child in the program will be in groups of 3-5, if there aren't others of the same age they will be with those one year older or younger.<br> No extra fees more than the original cost</p>
+        </dialog>
+        <dialog class="modal" id="old-info">
+            <button id="old-button">&times;</button>
+            <h4>18-20 Years Information</h4>
+            <p>All 18-20 year olds will be combined together in groups of 3-4<br> No extra fees more than the original cost</p>
+        </dialog>
+        <dialog class="modal" id="private-info">
+            <button id="private-button">&times;</button>
+            <h4>Private Information</h4>
+            <p>If private trainings are desired, private trainings are specified to an athletes specific needs.<br> Single training is $10 more, monthly trainings $40 more</p>
+        </dialog>
     </main>
     <footer>
         <p class="footer1">

@@ -1,17 +1,22 @@
+let allPrograms = [];
+
 /*collect data with async function*/
-async function getPrograms() {
+export async function getPrograms() {
     try {
         const response = await fetch("data/programs.json");
         const data = await response.json();
         console.log(data);
 
-        createProgramCards(data.programs);
+        allPrograms = data.programs;
+        /*show all programs*/
+        createProgramCards(allPrograms);
+        /*show programs based on user choice*/
+        filterPrograms();
+
     } catch (error) {
         console.error("Error:", error);
     }
 }
-
-getPrograms();
 
 /*function to create cards for each training program*/
 function createProgramCards(programs) {
@@ -95,3 +100,36 @@ function createProgramCards(programs) {
         container.appendChild(card);
     })
 }
+
+/*make a filter for cards based on age groups*/
+function filterAges(min, max) {
+    const filtered = allPrograms.filter(program =>
+        program.ages.some(age => age >= min && age <= max)
+    );
+    createProgramCards(filtered);
+}
+
+/*use the filter to only display those in the age group selected*/
+function filterPrograms() {
+    document.querySelector("#age1").addEventListener("click", () => {
+        filterAges(10, 12);
+    });
+
+    document.querySelector("#age2").addEventListener("click", () => {
+        filterAges(13, 17);
+    });
+
+    document.querySelector("#age3").addEventListener("click", () => {
+        filterAges(18, 20);
+    })
+
+
+    const showAll = document.getElementById("all");
+    if (showAll) {
+        showAll.addEventListener("click", () => {
+            createProgramCards(allPrograms);
+        })
+    }
+};
+
+
