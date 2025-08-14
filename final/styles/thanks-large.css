@@ -58,4 +58,28 @@
         padding: 10px 0;
         font-size: 25px;
     }
+
+    /*footer section*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer1 {
+        grid-column: 1 / 2;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .media-links {
+        grid-column: 2 / 3;
+        align-items: center;
+        margin: 0 2px;
+    }
+
+    .footer3 {
+        grid-column: 3 / 4;
+        align-items: center;
+        margin: 0 2px;
+    }
 }
